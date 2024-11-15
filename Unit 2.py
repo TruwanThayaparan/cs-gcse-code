@@ -90,12 +90,12 @@ else:
 Iteration - a programming construct that is a sequence of instructions that is repeated
 '''
 
-while True:
+while True: # While loop - indefinite iteration
     weaf = input("Say yes to end the loop!")
     if weaf.lower() == "yes":
         break
 
-for i in range(10):
+for i in range(10): # For loop - definite iteration
     print("Hello",i)
 
 '- PRIMM 4 -'
@@ -115,28 +115,28 @@ a string is a sequence of characters and can contain letters, numbers, symbols
 name = "Walter"
 print(name[2])
 
-''' Concatenation '''
+''' Concatenation ''' # - When you 'add' or join 2 strings together
 fname = "Walter"
 sname = "White"
 name = fname + '' + sname
-print(name);
+print(name); # output is walter white
 
 ''' Searching '''
-if 'f' in 'walter':
+if 'f' in 'Walter': # output is You lose!
     print("You win!")
 else:
     print("You lose!")
 
 ''' String splitting'''
-fname = "Walter"
+fname = "walter"
 # print(fname.subString(2,4))
-print(fname[2:4])
+print(fname[2:4]) # output is 'lt'
 
-len(fname)
-print(fname.upper())
-print(fname.lower())
-# print(fname.isUpper())
-# print(fname.isLower())
+len(fname) # length of the string
+print(fname.upper()) # turns all characters to uppercase
+print(fname.lower()) # turns all characters to lowercase
+print(fname.isupper()) # checks if all chars are uppercase
+print(fname.islower()) # checks if all chars are lowercase
 
 stre = "this is a string example... wow!"
 print("Length of the string: ",len(stre))
