@@ -90,6 +90,14 @@ else:
 Iteration - a programming construct that is a sequence of instructions that is repeated
 '''
 
+while True:
+    weaf = input("Say yes to end the loop!")
+    if weaf.lower() == "yes":
+        break
+
+for i in range(10):
+    print("Hello",i)
+
 '- PRIMM 4 -'
 secretNum = 42
 uInput = int(input("Guess a number between 1 and 100. "))
