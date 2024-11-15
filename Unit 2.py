@@ -148,15 +148,38 @@ print(text[9:16])
 # L6 Boolean Logic Gates
 
 '''
+TRUTH TABLES FOR LOGIC GATES
 AND
+A    B    Q -> OUTPUT
+0    0    0
+0    1    0
+1    0    0
+1    1    1
+
 OR
+A    B    Q
+0    0    0
+0    1    1
+1    0    1
+1    1    1
+
 NOT
+A    Q
+1    0
+0    1
+
 XOR
+A    B    Q
+0    0    0
+0    1    1
+1    0    1
+1    1    0
 '''
 
 # L7 Boolean operators
-print(5 == 5 and 4 < 5)
-print(4 == 5 or 4 < 5)
+print(5 == 5 and 4 < 5) # True
+print(4 == 5 or 4 < 5) # True
+# OUTPUT CAN ONLY BE TRUE OR FALSE
 
 trigList = ["Sine", "Cosine", "Tangent", "Cotangent", "Secant", "Cosecant"]
 
