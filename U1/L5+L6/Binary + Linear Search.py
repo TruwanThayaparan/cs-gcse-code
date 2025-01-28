@@ -3,16 +3,10 @@
 # Setup
 listOfNumbers = [3, 5, 7, 9, 12, 14, 16, 18, 21, 23, 27]
 
-while True:
-    try:
-        numberToFind = int(input("Input a number to find... "))
-        t = listOfNumbers.index(numberToFind)
-        break
-    except ValueError: # not sure how to inc. in the binary search :/
-        print("Sorry, that's not in the list!")
+numberToFind = int(input("Input a number to find... "))       
 
 # Binary Search
-high = len(listOfNumbers)
+high = len(listOfNumbers) - 1
 low = 0
 mid = (high + low) // 2
 
@@ -23,23 +17,28 @@ print(" ")
 print("Binary Search:")
 print(" ")
 
-while numberToFind != listOfNumbers[mid]:
+while low <= high:
     mid = (high + low) // 2
     comparisons += 1
+    
     if numberToFind > listOfNumbers[mid]:
         low = mid + 1
-        print("Attempted index", mid, ". Number",listOfNumbers[mid],"too low!")
-        print("Comparison:", comparisons)
+        print(f"Attempted index {mid}. Number {listOfNumbers[mid]} too low!")
     elif numberToFind < listOfNumbers[mid]:
         high = mid - 1
-        print("Attempted index", mid, ". Number",listOfNumbers[mid],"too high!")
-        print("Comparison:", comparisons)
+        print(f"Attempted index {mid}. Number {listOfNumbers[mid]} too high!")
     else:
-        print("numberToFind (",listOfNumbers[mid], ") was found at index", mid, ".")
-        print("This took", comparisons, "comparisons.")
+        print(f"numberToFind ({listOfNumbers[mid]}) was found at index {mid}.")
+        print(f"This took {comparisons} comparisons.")
         BinaryComparisons = comparisons
         break
+    print(f"Comparison: {comparisons}")
     print(" ")
+
+if low > high:
+    print(f"Sorry, {numberToFind} is not in the list!")
+    print(f"This took {comparisons} comparisons.")
+    BinaryComparisons = comparisons
 
 # Linear Search
 comparisons = 0 # Reseting the variable
@@ -63,16 +62,30 @@ for i in range(len(listOfNumbers)):
         print("Comparison:",comparisons)
     print(" ")
 
+if foundNumber == False:
+    print(f"Sorry, {numberToFind} is not in the list!")
+    print(f"This took {comparisons} comparisons.")
+    LinearComparisons = comparisons
+    # notPossibleToFind = True -- No, I'm wasting more time to add this
+
 print("\n")
 print("Winner:")
 print(" ")
 
-if LinearComparisons > BinaryComparisons: # If L/B won by 1 comparison, it will say "1 comparisons" and "1 times" but I don't want to make an exception womp womp
-    print("Binary search won by", LinearComparisons - BinaryComparisons, "comparisons.")
-    print("Binary search needed  to compare", BinaryComparisons, "times whilst linear search needed to compare", LinearComparisons, "times.")
+if LinearComparisons > BinaryComparisons:
+    if LinearComparisons - BinaryComparisons == 1:
+        print("Binary search won by", LinearComparisons - BinaryComparisons, "comparison.") # I made an exception because I have time
+        print("Binary search needed to compare", BinaryComparisons, "times whilst linear search needed to compare", LinearComparisons, "times.")
+    else:
+        print("Binary search won by", LinearComparisons - BinaryComparisons, "comparisons.")
+        print("Binary search needed to compare", BinaryComparisons, "times whilst linear search needed to compare", LinearComparisons, "times.")
 
 elif LinearComparisons < BinaryComparisons:
-    print("Linear search won by", BinaryComparisons - LinearComparisons, "comparisons.")
-    print("Linear search needed  to compare", LinearComparisons, "times whilst binary search needed to compare", BinaryComparisons, "times.")
+    if BinaryComparisons - LinearComparisons == 1:
+        print("Linear search won by", BinaryComparisons - LinearComparisons, "comparison.")
+        print("Linear search needed  to compare", LinearComparisons, "times whilst binary search needed to compare", BinaryComparisons, "times.")
+    else:
+        print("Linear search won by", BinaryComparisons - LinearComparisons, "comparisons.")
+        print("Linear search needed  to compare", LinearComparisons, "times whilst binary search needed to compare", BinaryComparisons, "times.")
 else:
     print("Binary and linear search both took the same amount of comparisons:", BinaryComparisons)
