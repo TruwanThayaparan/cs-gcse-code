@@ -29,20 +29,18 @@ greaterthanequalto = input1 >= input2
 
 print(lessthan); print(greaterthan); print(equalto); print(lessthanequalto); print(greaterthanequalto)
 
+# I'm not sure what I was trying to do here.
 inputOP = input("[comparison bot]: give me an operator")
 
-if inputOP = "less than":
+if inputOP = "less than" or inputOP = "<":
     lessthan = input1 < input2
-elif inputOP = "greater than":
+elif inputOP = "greater than" or inputOP = ">":
     greaterthan = input1 > input2
-else:
-    print("unfinished")
-
-'''
-elif:
+elif inputOP = "equal to" or inputOP = "=" or inputOP = "==":
     equalto = input1 == input2
-elif:
+elif inputOP = "less than or equal to" or inputOP = "<=":
     lessthanequalto = input1 <= input2
-elif:
+elif inputOP = "greater than or equal to" or inputOP = ">=":
     greaterthanequalto = input1 >= input2
-    '''
+else:
+    print("Invalid.")
