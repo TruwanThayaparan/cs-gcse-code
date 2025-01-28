@@ -1,6 +1,6 @@
-numberz = int(input("Enter a number..."))
+numberToCheck = int(input("Enter a number..."))
 
-if numberz >= 1 and numberz <= 10:
-    print("It is in range")
+if numberToCheck >= 1 and numberToCheck <= 10:
+    print("It is in range (between 1 to 10).")
 else:
-    print("It isn't in range.")
+    print("It isn't in range (not between 1 to 10).")
