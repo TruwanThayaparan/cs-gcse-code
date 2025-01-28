@@ -1,6 +1,6 @@
-numberz = int(input("Input a number. "))
+numberToCheck = int(input("Input a number. "))
 
-result = not( numberz >= 10 )
+result = not( numberToCheck >= 10 )
 
 if result:
     print(result)
