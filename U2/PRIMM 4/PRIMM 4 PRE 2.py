@@ -1,3 +1,5 @@
+# Before the actual task
+
 import time
 
 countingto = int(input("Please enter the number for me to count to:"))
