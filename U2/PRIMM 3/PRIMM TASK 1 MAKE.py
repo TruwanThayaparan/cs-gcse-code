@@ -35,5 +35,3 @@ elif task_mode == "floor divide" or task_mode == "floor division": # it's a secr
 
 else:
     print("ERROR: Invalid task!")
-    
-
