@@ -1,3 +1,5 @@
+-- These are the most original Friend names ever
+
 DROP TABLE iF EXISTS Friends;
 CREATE TABLE Friends(ID INT, FriendName TEXT, Gender TEXT);
 
