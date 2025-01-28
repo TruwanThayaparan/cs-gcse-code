@@ -15,7 +15,7 @@ print("EQUAL TO:", a == b)
 print("LESS THAN OR EQUAL TO:", a <= b)
 print("GREATER THAN OR EQUAL TO:", a >= b)
 
-print("\n\n\n")
+print("\n")
 # Make
 input1 = input("[comparison bot]: give me a input")
 input2 = input("[comparison bot]: give me another input")
