@@ -1,15 +1,12 @@
-#while True:
-#    print("Ha ha imagine getting nuked")
+# Before the actual task
 
 import time # so it's more like an actual countdown
 
-collectmypages = int(input("Countdown start number:"))
+counting = int(input("Countdown start number:"))
 
-while collectmypages != 0: # while collectmypages > 0:
-        print(collectmypages)
+while counting != 0: # while counting > 0:
+        print(counting)
         time.sleep(1)
-        collectmypages = collectmypages - 1
+        counting = counting - 1
     
 print("BEGIN!") # equivalent of 0 
-
-# while True: print("collect my pages...")
