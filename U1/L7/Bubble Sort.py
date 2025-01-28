@@ -1,7 +1,7 @@
 # Bubble Sort Algorithm
 
 #myList = [1,3,2,4,5]
-myList = [73,99,93,54,84,71,47,49,60,40,79,76,9,69,100,78,25,65,1,88]
+myList = [73,99,93,54,84,71,47,49,60,40,79,76,9,69,100,78,25,65,1,88] # A nice long random list
 
 print(myList)
 print(f"\n")
@@ -30,3 +30,5 @@ while hasSorted:
     
 print(myList)
 print("Bubble sort swapped",Swaps,"times and went through the list",Passes,"times.")
+
+# BTW, there's no Merge Sort because I suck at Python lol
