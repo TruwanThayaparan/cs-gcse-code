@@ -1,3 +1,5 @@
+# Never finished, so that's why it doesn't work. I ended up making Unit 2 Revision.py for what this was supposed to be
+
 definitions = ["a named location in memory that stores data that can be accessed throughout a program",
                "a variable that is set to never change the value",
                "the format in which data is stored in a variable",
