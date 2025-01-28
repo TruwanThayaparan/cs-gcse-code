@@ -1,3 +1,5 @@
+# Everything in PRIMM 5, U2
+
 # Run Task 1
 str = "This is a string example... Wow!"
 print("Length of the string: ", len(str))
