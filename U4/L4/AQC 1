@@ -3,5 +3,5 @@ Only include the fields; BrandName, CountryOfOrigin, ModelName and LaunchPrice; 
 
 SELECT BrandName, CountryOfOrigin, ModelName, LaunchPrice
 FROM CarManufacturers, CarModels
-WHERE CarModels.LaunchPrice < 30000 AND  CarModels.BrandID = CarManufacturers.BrandID
+WHERE CarModels.BrandID = 10 AND CarManufacturers.BrandID = 10
 ORDER BY BrandName ASC;
