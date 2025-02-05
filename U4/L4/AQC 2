@@ -1,7 +1,7 @@
-Advanced Query Challenge 4: Create an SQL query which returns cars whose CountryOfOrigin is England and LaunchPrice is greater than £100,000. 
-Only include the fields; BrandName, ModelName and LaunchPrice; sort by LaunchPrice is descending order
+Advanced Query Challenge 2: Create a SQL query which returns only cars whose LaunchPrice was less than £30,000. 
+Only include the fields; BrandName, CountryOfOrigin, ModelName and LanchPrice;sort by BrandName, in ascending order
 
-SELECT BrandName, CountryOfOrigin, LaunchPrice
+SELECT BrandName, CountryOfOrigin, ModelName, LaunchPrice
 FROM CarManufacturers, CarModels
-WHERE CarManufacturers.CountryOfOrigin = 'England' AND CarModels.LaunchPrice > 100000 AND CarModels.BrandID = CarManufacturers.BrandID
-ORDER BY LaunchPrice DESC;
+WHERE CarModels.LaunchPrice < 30000 AND CarModels.BrandID = CarManufacturers.BrandID
+ORDER BY BrandName ASC;
