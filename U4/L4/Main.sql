@@ -7,7 +7,7 @@ INSERT INTO CarManufacturers VALUES(2, 'Ford', 'America', 'Value',1903);
 INSERT INTO CarManufacturers VALUES(3,' Mercedes',' Germany', 'Luxury',1926);
 INSERT INTO CarManufacturers VALUES(4, 'BMW', 'Germany', 'Luxury',1916);
 INSERT INTO CarManufacturers VALUES(5, 'VW', 'Germany', 'Value',1937);
-INSERT INTO CarManufacturers VALUES(6, 'Ferrari',' Italy', 'Sports cars',1947);
+INSERT INTO CarManufacturers VALUES(6, 'Ferrari', 'Italy', 'Sports cars',1947);
 INSERT INTO CarManufacturers VALUES(7, 'Lamborghini', 'Italy', 'Sports cars',1947);
 INSERT INTO CarManufacturers VALUES(8, 'Jaguar', 'England', 'Luxury',1922);
 INSERT INTO CarManufacturers VALUES(9, 'Mclaren', 'England', 'Sports cars', 1963);
