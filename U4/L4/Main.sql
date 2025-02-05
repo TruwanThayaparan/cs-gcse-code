@@ -4,7 +4,7 @@ CREATE TABLE CarManufacturers(BrandID INT, BrandName TEXT, CountryOfOrigin TEXT,
 
 INSERT INTO CarManufacturers VALUES(1, 'Volvo', 'Sweden', 'Family',1927);
 INSERT INTO CarManufacturers VALUES(2, 'Ford', 'America', 'Value',1903);
-INSERT INTO CarManufacturers VALUES(3,' Mercedes', 'Germany', 'Luxury',1926);
+INSERT INTO CarManufacturers VALUES(3, 'Mercedes', 'Germany', 'Luxury',1926);
 INSERT INTO CarManufacturers VALUES(4, 'BMW', 'Germany', 'Luxury',1916);
 INSERT INTO CarManufacturers VALUES(5, 'VW', 'Germany', 'Value',1937);
 INSERT INTO CarManufacturers VALUES(6, 'Ferrari', 'Italy', 'Sports cars',1947);
