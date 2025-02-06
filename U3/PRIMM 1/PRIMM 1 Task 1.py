@@ -4,7 +4,8 @@ print(fruits[2])
 
 # Task 1 Modify
 fruits = ["apples", "bananas", "pears"]
-fruits.append("oranges")
+addedFruit = input("Add a new fruit...")
+fruits.append(addedFruit)
 print(fruits[2])
 
 # Task 1 Make
