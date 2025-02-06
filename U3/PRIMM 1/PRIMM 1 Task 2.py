@@ -23,7 +23,7 @@ for index in range(len(comSciMarks)):
         if var2 < var1:
             if var2 < lowestNumber:
                 lowestNumber = var2
-    except IndexError:
+    except IndexError: #Getting to the last index
         print("...")
     
     totalMarks += comSciMarks[index]
