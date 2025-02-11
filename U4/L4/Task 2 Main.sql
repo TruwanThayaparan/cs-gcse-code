@@ -75,7 +75,9 @@ ORDER BY BookID ASC;
 
 SELECT *
 FROM Authors, Books
-WHERE Authors.AuthorID = 4 AND Books.AuthorID = 4
+WHERE Authors.AuthorID = Books.AuthorID
+  AND Authors.FirstName = "Dan"
+  AND Authors.Surname = "Brown"
 ORDER BY BookID ASC;
 
 SELECT *
