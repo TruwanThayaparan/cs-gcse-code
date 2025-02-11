@@ -62,3 +62,23 @@ INSERT INTO Books VALUES
 (14, "The Hunger Games", "2008-09-14", "Dystopian", "9780439023528", 9);
 INSERT INTO Books VALUES
 (15, "Percy Jackson & The Olympians: The Lightning Thief", "2005-06-28", "Fantasy", "9780786838653", 10);
+
+SELECT *
+FROM Authors
+WHERE Authors.CountryOfOrigin = "England"
+ORDER BY AuthorID ASC;
+
+SELECT *
+FROM Books
+WHERE Books.Genre = "Thriller"
+ORDER BY BookID ASC;
+
+SELECT *
+FROM Authors, Books
+WHERE Authors.AuthorID = 4 AND Books.AuthorID = 4
+ORDER BY BookID ASC;
+
+SELECT *
+FROM Authors, Books
+WHERE (Authors.CountryOfOrigin = "England" OR Authors.CountryOfOrigin = "Scotland") AND Books.Genre = "Thriller"
+ORDER BY BookID ASC;
