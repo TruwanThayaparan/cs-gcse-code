@@ -80,5 +80,7 @@ ORDER BY BookID ASC;
 
 SELECT *
 FROM Authors, Books
-WHERE (Authors.CountryOfOrigin = "England" OR Authors.CountryOfOrigin = "Scotland") AND Books.Genre = "Thriller"
+WHERE Authors.AuthorID = Books.AuthorID
+  AND (Authors.CountryOfOrigin = "England" OR Authors.CountryOfOrigin = "Scotland")
+  AND Books.Genre = "Fiction"
 ORDER BY BookID ASC;
