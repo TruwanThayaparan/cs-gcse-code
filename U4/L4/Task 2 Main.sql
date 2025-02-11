@@ -25,6 +25,12 @@ INSERT INTO Authors VALUES(3, "John", "Le Carre", "1931-10-19", 90, "England");
 INSERT INTO Authors VALUES(4, "Dan", "Brown", "1964-06-22", 56, "USA");
 INSERT INTO Authors VALUES(5, "Tim", "Marshall", "1959-05-01", 61, "England");
 
+INSERT INTO Authors VALUES(6, "George", "Orwell", "1903-06-25", 46, "England");
+INSERT INTO Authors VALUES(7, "Isaac", "Asimov", "1920-01-02", 72, "USA");
+INSERT INTO Authors VALUES(8, "Agatha", "Christie", "1890-09-15", 85, "England");
+INSERT INTO Authors VALUES(9, "Suzanne", "Collins", "1962-08-10", 62, "USA");
+INSERT INTO Authors VALUES(10, "Rick", "Riordan", "1964-06-05", 60, "USA");
+
 INSERT INTO Books VALUES
 (1, "Harry Potter and the Philosopher's Stone", "1997-06-26", "Fiction", "9781408855652", 1);
 INSERT INTO Books VALUES
@@ -45,3 +51,14 @@ INSERT INTO Books VALUES
 (9, "The Lost Symbol", "2010-07-22", "Thriller", "9780552149525", 4);
 INSERT INTO Books VALUES
 (10, "Prisoners of Geography", "2016-06-02", "Political", "9781783962433", 5);
+
+INSERT INTO Books VALUES
+(11, "1984", "1949-06-08", "Dystopian", "9780451524935", 6);
+INSERT INTO Books VALUES
+(12, "Foundation", "1951-05-01", "Science Fiction", "9780553293357", 7);
+INSERT INTO Books VALUES
+(13, "Murder on the Orient Express", "1934-01-01", "Mystery", "9780062693662", 8);
+INSERT INTO Books VALUES
+(14, "The Hunger Games", "2008-09-14", "Dystopian", "9780439023528", 9);
+INSERT INTO Books VALUES
+(15, "Percy Jackson & The Olympians: The Lightning Thief", "2005-06-28", "Fantasy", "9780786838653", 10);
