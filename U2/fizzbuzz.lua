@@ -1,4 +1,4 @@
--- FizzBuzz.py
+-- FizzBuzz.lua
 -- Print all numbers from 1 to the finishing number (100)
 -- But numbers divisible by 3 print Fizz instead, numbers divisible by 5 print Buzz and numbers divisible by 3 and 5 print FizzBuzz.
 
