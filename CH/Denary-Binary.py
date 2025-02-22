@@ -5,7 +5,7 @@ Denary and binary are two interchangeable number systems. Binary is used to repr
 Binary uses only 2 digits (0 and 1), so is also called base-2, whereas denary is base-10. 
 You should create a program that lets a user provide a denary integer and receive the binary equivalent. 
 The program should also provide the option to do the reverse process - converting a binary integer to its denary equivalent. 
-As an extension, you could also allow onversion between other bases, like hexadecimal or octal. 
+As an extension, you could also allow conversion between other bases, like hexadecimal or octal. 
 Your code should perform these without the use of any built-in conversion functions. 
 '''
 
