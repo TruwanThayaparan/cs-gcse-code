@@ -6,7 +6,7 @@ num2 = int(input("End number: "))
 #print(num)
 #print(num2)
 
-while num < num2:
+while num <= num2:
     if not num % 5 == 0 and num % 3 == 0:
         print("Fizz")
 
@@ -14,7 +14,7 @@ while num < num2:
         print("Buzz")
 
     if num % 5 == 0 and num % 3 == 0:
-        print("Fizz Buzz")
+        print("FizzBuzz")
 
     if not num % 5 == 0 and not num % 3 == 0:
         print(num)
