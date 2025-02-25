@@ -1,5 +1,4 @@
-# Snowman Game
-# Challenge 1
+# Snowman Game - Challenge 1
 
 '''
 Snowman is an alternate version of the 'hangman'. In the game a word is selected and those playing the game guess letters that could be in the word. 
@@ -50,7 +49,6 @@ ASCII ART: Here's an example of the snowman ASCII art in Python.
     
 '''
 
-# Snowman Game
 import random
 
 # dictionary of the words used in the game
