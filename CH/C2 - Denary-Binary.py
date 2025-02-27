@@ -28,6 +28,7 @@ def db(denary):
 
   return binary
 
+# Binary to denary
 def bd(binary):
     exponent = 0
     denary = 0
@@ -84,10 +85,9 @@ def ask(quit):
       elif option == "3" or option.upper() == "Q":
           print("Program quit!")
           exit()
-        
+  
       else:
           print("ERROR: NOT A VALID OPTION.")
-   
-   
+
 while True:
   ask(quit)
