@@ -66,7 +66,6 @@ if foundNumber == False:
     print(f"Sorry, {numberToFind} is not in the list!")
     print(f"This took {comparisons} comparisons.")
     LinearComparisons = comparisons
-    # notPossibleToFind = True -- No, I'm wasting more time to add this
 
 print("\n")
 print("Winner:")
