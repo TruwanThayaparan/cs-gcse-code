@@ -5,7 +5,7 @@ last_name_q3 = input("What's your last name?") # It asks for your last name
 print("Hello, ",first_name_q2, "", last_name_q3,". Nice to meet you.")
 print("My name is Python.")
 
-random_number_wah = random.randint(1,3)
+random_number = random.randint(1,3)
 
 if random_number == 1:
      print(q1 + ", you're amazing!") # original complement
