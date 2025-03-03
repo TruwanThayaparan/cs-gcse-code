@@ -1,0 +1,16 @@
+listOfNumbers <- [3,5,7,9,12,14,16,18,21,23,27]
+NumToFind <- 23
+High <- LEN(listOfNumbers)
+Low <- 1
+Mid <- High DIV 2
+
+WHILE NumToFind != listOfNumbers[Mid]
+  Mid <- (High + Low) DIV 2
+  IF NumToFind > listOfNumbers[Mid] THEN
+      Low <- Mid + 1
+  ELSEIF NumToFind < listOfNumbers[Mid] THEN
+      High <- Mid - 1
+  ELSE
+      OUTPUT listOfNumbers[Mid]
+  ENDIF
+ENDWHILE
