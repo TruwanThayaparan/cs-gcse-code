@@ -1,8 +1,8 @@
-listOFNumbers <- [1,3,2,5,4,7]
+listOfNumbers <- [1,3,2,5,4,7]
 x <- 5
 
-FOR a <- 1 TO LEN(listOFNumbers)
-  IF x = listOFNumbers[a] THEN
+FOR a <- 1 TO LEN(listOfNumbers)
+  IF x = listOfNumbers[a] THEN
     OUTPUT a
   ENDIF
 ENDFOR
