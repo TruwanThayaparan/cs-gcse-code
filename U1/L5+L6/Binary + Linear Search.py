@@ -1,4 +1,5 @@
 # Binary and linear search
+# More detailed version of L5 and L6 Individual
 
 # Setup
 listOfNumbers = [3, 5, 7, 9, 12, 14, 16, 18, 21, 23, 27]
