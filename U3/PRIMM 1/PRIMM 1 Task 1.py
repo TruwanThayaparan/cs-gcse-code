@@ -1,3 +1,5 @@
+# This is part of U1 for some reason but I'm not moving it
+
 # Task 1 Make
 fruits = ["apples", "bananas", "pears"]
 print(fruits[2])
