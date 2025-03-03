@@ -1,6 +1,7 @@
 myList <- [1,3,2,4,5]
 swapped <- True
 WHILE swapped
+  swapped <- False
   FOR i <- IN LEN(MyList) - 1
     IF myList[i] > myList[i]
       temp <- myList[i]
