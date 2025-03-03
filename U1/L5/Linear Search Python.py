@@ -1,4 +1,4 @@
-ListOfNumbers = [1,3,2,5,4,7]
+listOfNumbers = [1,3,2,5,4,7]
 x = 5
 
 for i in range(len(listOfNumbers)):
