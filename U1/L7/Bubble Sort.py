@@ -30,5 +30,3 @@ while hasSorted:
     
 print(myList)
 print("Bubble sort swapped",Swaps,"times and went through the list",Passes,"times.")
-
-# BTW, there's no Merge Sort because I suck at Python lol
