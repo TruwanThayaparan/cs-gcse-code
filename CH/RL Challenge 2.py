@@ -21,7 +21,6 @@ if atmosphericConditions == "dust storm":
 elif atmosphericConditions == "foggy":
     stoppingDistance *= 1.5
 
-
 while True:
         stabilisersActive = input("Are the hover-bike's anti-gravity stabilisers active (yes or no)? ").lower()
         if stabilisersActive in ["yes", "no"]:
