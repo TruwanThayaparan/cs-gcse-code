@@ -10,7 +10,7 @@ while True:
     except ValueError:
         print("Input must be a numerical value.")
 
-stoppingDistance = (hoverBikeSpeed ^ 2) / 150
+stoppingDistance = (hoverBikeSpeed ** 2) / 150
 
 while True:
     atmosphericConditions = input("What are the atmospheric conditions (dust storm, clear, foggy)? ").lower()
