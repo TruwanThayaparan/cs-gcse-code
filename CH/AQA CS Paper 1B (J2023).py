@@ -10,8 +10,8 @@ while True:
 	print("Dice 2:", dice2)
 	print("Current score:", score)
 	if score < 21:
-		continue = input("Would you like to roll again?")
-		If continue != "yes":
+		keepGoing = input("Would you like to roll again?")
+		if keepGoing != "yes":
 			break
 	else:
 		break
