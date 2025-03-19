@@ -1,4 +1,6 @@
 # Solution for RL Challenge 2
+# Note: This is an answer to an altered version of the final question of AQA GCSE CS Specimen Paper 1B
+
 while True:
     try: 
         hoverBikeSpeed = int(input("Enter the hover-bike's speed (20 - 100 kilometres per hour/kph): "))
