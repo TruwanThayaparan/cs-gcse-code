@@ -10,37 +10,41 @@ The film’s genre i.e. action, comedy etc. and
 The film’s star rating (i.e. how good is was) 
 Returns the data content for each film (object) 
 3. You should create at least FIVE film objects 
+'''
 
-
-class classStudent:
+class classFilms:
   def Name(self, name):
     self.name = name
-  def displayName(self):
+  def DisplayName(self):
     return self.name
-  def Age(self, age):
+    
+  def AgeRating(self, age):
     self.age = age
-  def displayAge(self):
+  def DisplayAge(self):
     return self.age
 
-first = classStudent()
-second = classStudent()
-third = classStudent()
+  def Genre(self, genre):
+    self.genre = genre
+  def DisplayGenre(self):
+    return self.genre
 
-first.Name(input("What is the first person's name? "))
-first.Age(input("What is the first person's age? "))
+  def StarRating(self, stars):
+    self.stars = stars
+  def DisplayStars(self):
+    return self.stars
+
+first = classFilms()
+second = classFilms()
+third = classFilms()
+fourth = classFilms()
+fifth = classFilms()
+
+first.Name(input("What is the first movie's name? "))
+first.AgeRating(input("What is the first movie's age rating? "))
+first.Genre(input("What is the first movie's genre? "))
+first.StarRating(input("What is the first movie's star rating? "))
 
 print(first.DisplayName())
 print(first.DisplayAge())
-
-second.Name(input("What is the second person's name? "))
-second.Age(input("What is the second person's age? "))
-
-print(second.DisplayName())
-print(second.DisplayAge())
-
-third.Name(input("What is the third person's name? "))
-third.Age(input("What is the third person's age? "))
-
-print(third.DisplayName())
-print(third.DisplayAge())
-'''
+print(first.DisplayGenre())
+print(first.DisplayStars())
