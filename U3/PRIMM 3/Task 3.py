@@ -14,11 +14,11 @@ second = classStudent()
 first.Name(input("What is the first person's name? "))
 first.Age(input("What is the first person's age? "))
 
-print(first.DisplayName())
-print(first.DisplayAge())
+print(first.displayName())
+print(first.displayAge())
 
 second.Name(input("What is the second person's name? "))
 second.Age(input("What is the second person's age? "))
 
-print(second.DisplayName())
-print(second.DisplayAge())
+print(second.displayName())
+print(second.displayAge())
