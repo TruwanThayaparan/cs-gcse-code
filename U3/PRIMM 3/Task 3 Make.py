@@ -1,17 +1,3 @@
-'''
-When I get time for this...
-
-You are now going to attempt to create your own class; the class should hold information about films. Your solution should fulfill the following requirements:
-1. You should assign the class an appropriate name i.e. Films
-2. The class must contain methods that add data items for each film (object), including:
-The film’s name
-The film’s age rating
-The film’s genre i.e. action, comedy etc. and 
-The film’s star rating (i.e. how good is was) 
-Returns the data content for each film (object) 
-3. You should create at least FIVE film objects 
-'''
-
 class classFilms:
   def Name(self, name):
     self.name = name
@@ -48,3 +34,43 @@ print(first.DisplayName())
 print(first.DisplayAge())
 print(first.DisplayGenre())
 print(first.DisplayStars())
+
+second.Name(input("What is the second movie's name? "))
+second.AgeRating(input("What is the second movie's age rating? "))
+second.Genre(input("What is the second movie's genre? "))
+second.StarRating(input("What is the second movie's star rating? "))
+
+print(second.DisplayName())
+print(second.DisplayAge())
+print(second.DisplayGenre())
+print(second.DisplayStars())
+
+third.Name(input("What is the third movie's name? "))
+third.AgeRating(input("What is the third movie's age rating? "))
+third.Genre(input("What is the third movie's genre? "))
+third.StarRating(input("What is the third movie's star rating? "))
+
+print(third.DisplayName())
+print(third.DisplayAge())
+print(third.DisplayGenre())
+print(third.DisplayStars())
+
+fourth.Name(input("What is the fourth movie's name? "))
+fourth.AgeRating(input("What is the fourth movie's age rating? "))
+fourth.Genre(input("What is the fourth movie's genre? "))
+fourth.StarRating(input("What is the fourth movie's star rating? "))
+
+print(fourth.DisplayName())
+print(fourth.DisplayAge())
+print(fourth.DisplayGenre())
+print(fourth.DisplayStars())
+
+fifth.Name(input("What is the fifth movie's name? "))
+fifth.AgeRating(input("What is the fifth movie's age rating? "))
+fifth.Genre(input("What is the fifth movie's genre? "))
+fifth.StarRating(input("What is the fifth movie's star rating? "))
+
+print(fifth.DisplayName())
+print(fifth.DisplayAge())
+print(fifth.DisplayGenre())
+print(fifth.DisplayStars())
