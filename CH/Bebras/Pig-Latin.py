@@ -2,9 +2,9 @@
 
 word = input("Enter a word.")
 if word[0].lower() not in ["a", "e", "i", "o", "u"]:
-  word_keep = word[0]
-  word = word.strip(word[0])
-  word += ("-" + word_keep + "ay")
+    word_keep = word[0]
+    word = word[1:]
+    word += "-" + word_keep + "ay"
 else:
-  word += "-yay"
+    word += "-yay"
 print(word)
