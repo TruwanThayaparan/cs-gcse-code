@@ -21,6 +21,7 @@ if len(word) == len(word2):
 else:
     print("Not anagramed.")
 
+# well, here was the SIMPLE solution!
 '''
  if sorted(word) == sorted(word2):
         print("Anagramed.")
