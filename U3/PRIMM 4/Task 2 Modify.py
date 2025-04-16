@@ -17,7 +17,7 @@ for each in citiesListCLEAN:
 fileOut.close()
 
 fileOut = open("unique.txt", "a")
-fileOut.write("501, Watford \n")
+fileOut.write("501, Bradford \n")
 fileOut.close()
 
 import random
