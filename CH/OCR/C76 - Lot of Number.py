@@ -1,6 +1,6 @@
 # Challenge 76 - That’s a lot of number
 
-# text_file = open('numbers.txt','r')
+text_file = open('numbers.txt','r') # Set this to the file where all the numbers are
 numbers_to_add = []
 
 lines = text_file.readlines()
