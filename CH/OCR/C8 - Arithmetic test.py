@@ -1,4 +1,4 @@
-# Arithmetic test [Challenge 8]
+# Challenge 8 - Arithmetic test
 
 import random
 
