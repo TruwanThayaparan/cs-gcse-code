@@ -1,4 +1,4 @@
-# Fibbing - Challenge 23
+# Challenge 23 - Fibbing
 lets_generate = int(input("How many places of the Fibonacci sequence do you require? "))
 
 fib_sequence = []
