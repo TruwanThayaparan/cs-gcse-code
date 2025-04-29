@@ -1,4 +1,4 @@
-# Factorial Finder [Challenge 1]
+# Challenge 1 - Factorial Finder
 
 n = int(input("Enter a number... "))
 
