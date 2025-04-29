@@ -6,8 +6,6 @@ myList = [73,99,93,54,84,71,47,49,60,40,79,76,9,69,100,78,25,65,1,88] # A nice l
 print(myList)
 print(f"\n")
 
-import random
-
 Passes = 0
 Swaps = 0
 hasSorted = True
