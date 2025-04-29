@@ -43,3 +43,19 @@ while hasSorted:
     Passes += 1
 
 print(numbers)
+
+# Extension (this is solving extension 2)
+word = input("Input a word: ")
+parts = word.split()
+print(parts)
+neon = ""
+for part in range(len(parts)):
+    wordle = sorted(parts[part])
+    print(wordle)
+    final = ""
+    for i in wordle:
+        final += i
+    final += " "
+    #print(final)
+    neon += final
+print(neon)
