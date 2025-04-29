@@ -1,4 +1,4 @@
-# Find the Factorial [Challenge 45]
+# Challenge 45 - Find the Factorial
 
 n = int(input("Enter a number... "))
 
