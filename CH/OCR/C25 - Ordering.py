@@ -12,6 +12,12 @@ for i in range(10):
             print("Please enter a number.")
 
 print(numbers)
+while True:
+    way = input("Should the numbers be sorted into an ascending order or a descending order? ")
+    if way == "ascending" or way == "descending":
+        break
+    else:
+        print("Not a valid option. Try again.")
 
 # Bubble sort (it's a short list)
 Passes = 0
@@ -20,7 +26,12 @@ hasSorted = True
 while hasSorted:
     hasSorted = False
     for i in range(len(numbers) - 1):
-        if numbers[i] > numbers[i + 1]:
+        if way == "ascending":
+            check = numbers[i] > numbers[i + 1]
+        else:
+            check = numbers[i] < numbers[i + 1]
+            
+        if check:
                 temp = numbers[i]
                 temp2 = numbers[i+1]
                 numbers[i] = numbers[i + 1]
