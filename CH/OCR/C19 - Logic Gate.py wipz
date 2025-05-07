@@ -1,0 +1,6 @@
+# Challenge 19 - Logic Gate
+
+logic_gate = input("ENTER LOGIC GATE (OR/AND/XOR/NAND/NOR): ")
+input1 = input("ENTER FIRST INPUT: ")
+input2 = input("ENTER SECOND INPUT: ")
+print("RESULT: ",result)
