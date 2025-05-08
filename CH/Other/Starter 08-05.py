@@ -2,6 +2,7 @@ while True:
     try:
         secret_number = 42 # because 42 is everything
         attempted_num = int(input("Guess my secret number: "))
+        # print("correct" if secret_number == attempted_num else "incorrect")
         if secret_number < attempted_num:
             print("Your guess is too MASSIVE... \n")
         elif secret_number > attempted_num:
