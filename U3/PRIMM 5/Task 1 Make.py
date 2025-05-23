@@ -1,7 +1,7 @@
 # guessing game
 import random
 while True:
-    random_number = random.randint(1,5)
+    random_number = random.randint(1,10)
     guesses = 0
     while guesses < 5:
         #print(random_number)
@@ -30,7 +30,7 @@ while True:
     if guesses == 5:
         print("Oh no, you lost! My number was:",random_number)
       
-    restart = input("Would you like to play again?")
+    restart = input("Would you like to play again? ")
     if restart == "yes":
       pass
     else:
