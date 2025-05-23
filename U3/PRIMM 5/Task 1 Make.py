@@ -1,7 +1,7 @@
 # guessing game
 import random
 while True:
-    random_number = random.randint(1,10)
+    random_number = random.randint(0,10)
     guesses = 0
     while guesses < 5:
         #print(random_number)
