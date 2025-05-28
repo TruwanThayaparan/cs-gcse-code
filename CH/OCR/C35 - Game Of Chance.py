@@ -33,7 +33,7 @@ while True:
             print(f"Bet {bets}")
             bet = int(input("How many units will you bet: "))
             if 1 <= bet <= 10 and 0 <= (money - bet):
-                tries.append((guess, bet))  # Store both guess and bet
+                tries.append((guess, bet))
                 money -= bet
                 bets += 1
             else:
@@ -51,7 +51,6 @@ while True:
         if keep_going == "no":
             break
 
-    # After betting is done, roll the random number
     random_number = random.randint(0, 30)
     print(f"\n The random number is: {random_number}")
 
