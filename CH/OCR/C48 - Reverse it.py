@@ -22,8 +22,20 @@ vx = 0
 for v in vowels:
     vx += red.lower().count(v)
     
-print("Length:",red)
+print("Length:",len(red))
 print("Vowels:",vx)
 print("Consonants:", len(red) - vx)
 
-# Palindrome Checker can easily be implemented from my Palindromes script
+pal = lets_generate
+palidrome = True
+for i in range(len(pal) - 1):
+  if pal[i] == pal[len(pal) - 1 - i]:
+    continue
+  else:
+    palidrome = False
+    break
+    
+if palidrome:
+    print(pal, "is a palindrome.")
+else:
+    print(pal, "is not a palindrome.")
