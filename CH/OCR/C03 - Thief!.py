@@ -1,6 +1,6 @@
 # Challenge 3 - Thief!
 
-pin = "4214"
+pin = "4214" # set this to any 4 digit number
 dan = input("Input the four digits in question: ")
 numbers = [dan[0], dan[1], dan[2], dan[3]]
 saved = []
