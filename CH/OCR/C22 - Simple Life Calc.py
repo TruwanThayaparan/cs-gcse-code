@@ -1,5 +1,5 @@
 # Challenge 22 - Simple Life Calculator
-# Wording unclear so...
+# The wording was unclear so this may be wrong.
 
 def vat_calculator():
     print("VAT Calculator:")
@@ -72,15 +72,15 @@ def main():
         print("2. Tax Calculator")
         print("3. Times Table")
         print("4. Exit")
-        choice = input("Enter choice (1-4): ")
+        choice = input("Enter choice (1-4): ").strip()
 
-        if choice == "1":
+        if choice == "1" or choice == "VAT" or choice == "vat":
             vat_calculator()
-        elif choice == "2":
+        elif choice == "2" or choice == "TAX" or choice == "tax":
             tax_calculator()
         elif choice == "3":
             times_table()
-        elif choice == "4":
+        elif choice == "4" or choice == "Exit" or choice == "exit":
             print("Goodbye!")
             break
         else:
