@@ -1,4 +1,4 @@
-# Challenge 35 - Game Of Chance
+# Challenge 35 - Game of Chance
 import random
 
 print("WELCOME TO THE GAME OF CHANCE!")
