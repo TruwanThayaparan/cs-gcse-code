@@ -1,27 +1,47 @@
 # Challenge 6 - Unit Converter
 
-def temp():
-  convert_from = None
-  while convert_from not in ("fahrenheit", "celsius", "kelvin"):
-    convert_from = input("What will you convert from (fahrenheit, celsius, kelvin)? ").strip().lower()
-
-  convert_to = None
-  while convert_to not in ("fahrenheit", "celsius", "kelvin"):
-    convert_to = input("What will you convert to (fahrenheit, celsius, kelvin)? ").strip().lower()
+def get_conversion_units(options, prompt_from, prompt_to):
+    convert_from = None
+    while convert_from not in options:
+        convert_from = input(prompt_from).strip().lower()
     
-    if convert_from == convert_to:
-      print("Convert from must not equal convert to.")
-      convert_to = None
+    convert_to = None
+    while convert_to not in options:
+        convert_to = input(prompt_to).strip().lower()
+        if convert_from == convert_to:
+            print("Convert from must not equal convert to.")
+            convert_to = None
+    
+    while True:
+        try:
+            value = float(input("Enter the value you will be converting: ").strip())
+            break
+        except ValueError:
+            print("You must enter a number.")
+    
+    return convert_from, convert_to, value
 
-  while True:
-    try:
-      value = float(input("Enter the value you will be converting: ").strip())
-      break
-    except ValueError:
-      print("You must enter a number.")
-
-  return convert_from, convert_to, value
-
+def temp():
+    return get_conversion_units(
+        ("fahrenheit", "celsius", "kelvin"),
+        "What will you convert from: Fahrenheit, Celsius or Kelvin? ",
+        "What will you convert to: Fahrenheit, Celsius or Kelvin? "
+    )
+  
+def currency():
+    return get_conversion_units(
+        ("usd", "eur", "gbp"),
+        "What will you convert from: USD, EUR or GBP? ",
+        "What will you convert to: USD, EUR, GBP? "
+    )
+  
+def volume():
+    return get_conversion_units(
+        ("litres", "gallons", "millilitres"),
+        "What will you convert from: Litres, Gallons or Millilitres? ",
+        "What will you convert to: Litres, Gallons or Millilitres? "
+    )
+  
 def get_temp(cf, ct, v):
     if cf == "fahrenheit" and ct == "celsius":
         return (v - 32) * 5 / 9
@@ -38,28 +58,6 @@ def get_temp(cf, ct, v):
     else:
         return "fail"  # fallback
 
-def currency():
-  convert_from = None
-  while convert_from not in ("usd", "eur", "gbp"):
-    convert_from = input("What will you convert from (USD, EUR, GBP)? ").strip().lower()
-
-  convert_to = None
-  while convert_to not in ("usd", "eur", "gbp"):
-    convert_to = input("What will you convert to (USD, EUR, GBP)? ").strip().lower()
-    
-    if convert_from == convert_to:
-      print("Convert from must not equal convert to.")
-      convert_to = None
-
-  while True:
-    try:
-      value = float(input("Enter the value you will be converting: ").strip())
-      break
-    except ValueError:
-      print("You must enter a number.")
-
-  return convert_from, convert_to, value
-
 def get_currency(cf, ct, v):
     if cf == "usd" and ct == "eur":
         return (v * 0.93)
@@ -75,28 +73,6 @@ def get_currency(cf, ct, v):
         return (v * 1.18)
     else:
         return "fail"  # fallback
-      
-def volume():
-  convert_from = None
-  while convert_from not in ("litres", "gallons", "millilitres"):
-    convert_from = input("What will you convert from (litres, gallons, millilitres)? ").strip().lower()
-
-  convert_to = None
-  while convert_to not in ("litres", "gallons", "millilitres"):
-    convert_to = input("What will you convert to (litres, gallons, millilitres)? ").strip().lower()
-    
-    if convert_from == convert_to:
-      print("Convert from must not equal convert to.")
-      convert_to = None
-
-  while True:
-    try:
-      value = float(input("Enter the value you will be converting: ").strip())
-      break
-    except ValueError:
-      print("You must enter a number.")
-
-  return convert_from, convert_to, value
   
 def get_volume(cf, ct, v):
     if cf == "litres" and ct == "gallons":
