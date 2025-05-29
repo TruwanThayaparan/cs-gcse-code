@@ -1,7 +1,7 @@
 # Challenge 35 - Game Of Chance
 import random
 
-print("WELCOME TO THE GAME OF CHANCE! MAKE SURE TO READ ABOUT GAMBLEAWARE FIRST.")
+print("WELCOME TO THE GAME OF CHANCE!")
 money = 100
 
 while True:
