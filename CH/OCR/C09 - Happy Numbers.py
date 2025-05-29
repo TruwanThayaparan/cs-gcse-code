@@ -1,5 +1,12 @@
 # Challenge 9 - Happy Numbers
 
+def is_happy(num):
+    seen = set()
+    while num != 1 and num not in seen:
+        seen.add(num)
+        num = sum(int(d)**2 for d in str(num))
+    return num == 1
+    
 happy_numbers = []
 found_all = 0
 t = 1
