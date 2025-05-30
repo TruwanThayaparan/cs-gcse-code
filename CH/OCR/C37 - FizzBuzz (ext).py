@@ -1,12 +1,8 @@
 # Challenge 37 - Fizz Buzz (EXTENSION)
 
-num = int(input("Enter a number: "))
-base1 = int(input("BASE NUMBER 1: "))
-base2 = int(input("BASE NUMBER 2: "))
-
-num = int(input("Enter a number: "))
-base1 = int(input("BASE NUMBER 1: "))
-base2 = int(input("BASE NUMBER 2: "))
+num = int(input("What will you count to? "))
+base1 = int(input("Base number 1: "))
+base2 = int(input("Base number 2: "))
 
 for i in range(1, num + 1):
     if i % base1 == 0 and i % base2 == 0:
