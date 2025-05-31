@@ -2,23 +2,33 @@
 # The wording was a bit unclear so...
 
 year = 0
-while 1000 > int(year) or int(year) > 9999:
-    year = input("Enter a year that is 4 digits long (####): ")
+while True:
+    try:
+        year = int(input("Enter a year that is 4 digits long (####): "))
+        if 1000 <= year <= 9999:
+            break
+        else:
+            print("Year must be exactly 4 digits.")
+    except ValueError:
+        print("You must enter a number.")
 
-total = 0
-for i in range(4):
-    total += int(year[i])
-
-print("Sum of the digits is:", total)
+total = sum(int(digit) for digit in str(year))
+print(f"Sum of the digits is: {total}.")
 
 attempts = 0
 score = 0
 guessed = set()
 
 while attempts != 4:
-    attempt = int(input("What integers can your year divide by? Guess: "))
+    while True:
+        try:
+            attempt = int(input("What integers can your year divide by? Guess: "))
+            break
+        except ValueError:
+            print("You must enter a number.")
+            
     if attempt in guessed:
-        print("You already guessed that number. Try a different one.")
+        print("You have already guessed that number. Try a different one.")
         continue
     guessed.add(attempt)
     if int(year) % attempt == 0:
@@ -26,6 +36,6 @@ while attempts != 4:
         print("That's correct!")
     else:
         attempts += 1
-        print("Sorry, that's wrong. You have", 4 - attempts, "attempts left.")
+        print(f"Sorry, that's wrong. You have {4 - attempts} attempts left.")
 
-print("You're out of attempts! Your score is:", score)
+print(f"You're out of attempts! Your score is: {score}.")
