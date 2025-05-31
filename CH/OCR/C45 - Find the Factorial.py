@@ -4,7 +4,7 @@ while True:
     try:
         n = int(input("Enter a number... "))
         break
-    except:
+    except ValueError:
         print("You must enter a number.")
         
 if n < 0:
