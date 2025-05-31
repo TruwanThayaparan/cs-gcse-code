@@ -1,7 +1,6 @@
 # OCR Coding Challenges
 
-Welcome to my collection of solutions for the OCR **GCSE** Coding Challenges! These challenges come from the official booklet published by OCR:  
-https://www.ocr.org.uk/Images/202838-20-code-challenges.pdf
+Welcome to my collection of solutions for the OCR **GCSE** Coding Challenges! These challenges come from the official booklet published by OCR: https://www.ocr.org.uk/Images/202838-20-code-challenges.pdf
 
 To see my solutions for the OCR **A-Level (and GCSE)** Coding Challenges, click [here](https://github.com/TruwanThayaparan/cs-gcse-code/blob/main/CH/OCR/README.md).
 
