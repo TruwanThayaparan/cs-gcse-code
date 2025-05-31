@@ -30,7 +30,9 @@ def menu():
   if keep_going.strip().lower() in ("no", "n"):
       print("Script ended.")
       return
-
+  else:
+      menu()
+    
 def run_cipher(message, key, mode):
     result = []
 
