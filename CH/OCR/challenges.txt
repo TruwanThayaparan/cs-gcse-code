@@ -2,7 +2,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 1. Factorial Finder ✅
 2. Speed Tracker
 3. Thief! ✅
-4. Classification
+4. Classification ✅
 5. Fruit Machine ✅
 6. Unit Converter (temperature, currency, volume) ✅
 7. Credit Card Validator ✅
