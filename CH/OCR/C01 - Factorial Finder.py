@@ -1,6 +1,11 @@
 # Challenge 1 - Factorial Finder
 
-n = int(input("Enter a number... "))
+while True:
+    try:
+        n = int(input("Enter a number... "))
+        break
+    except:
+        print("You must enter a number.")
 
 if n < 0:
     print("Factorial is not defined for negative numbers.")
