@@ -8,124 +8,67 @@ def get_float(prompt):
             print("You must enter a number.")
 
 def vat_calculator():
-    print("VAT Calculator:")
+    print("\nVAT Calculator:")
     print("1. Calculate price after VAT")
     print("2. Calculate original price before VAT")
     print("3. Calculate VAT rate from prices")
-    choice = input("Choose an option (1-3): ")
+
+    while True:
+        choice = input("Choose an option (1-3): ").strip()
+        if choice not in ("1", "2", "3"):
+            print("Invalid choice chosen, try again.")
+            continue
+        break
 
     if choice == "1":
-        while True:
-            try:
-                original = float(input("Enter original price: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
-        while True:
-            try:
-                rate = float(input("Enter VAT rate (in %): "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-                
+        original = get_float("Enter original price: ")
+        rate = get_float("Enter VAT rate (in %): ")
         price_after = original * (1 + rate / 100)
-        rpa = round(price_after, 2)
-        print("Price after VAT:", rpa)
+        print("Price after VAT:", round(price_after, 2))
 
     elif choice == "2":
-        while True:
-            try:
-                price_after = float(input("Enter price after VAT: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
-        while True:
-            try:
-                rate = float(input("Enter VAT rate (in %): "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-                
+        price_after = get_float("Enter price after VAT: ")
+        rate = get_float("Enter VAT rate (in %): ")
         original = price_after / (1 + rate / 100)
-        ro = round(original, 2)
-        print("Original price before VAT:", ro)
-
-    elif choice == "3":
-        while True:
-            try:
-                original = float(input("Enter original price: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
-        while True:
-            try:
-                price_after = float(input("Enter price after VAT: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
-        vat_rate = ((price_after - original) / original) * 100
-        rvr = round(vat_rate, 2)
-        print("VAT rate:",rvr,"%")
+        print("Original price before VAT:", round(original, 2))
 
     else:
-        print("Invalid choice")
+        original = get_float("Enter original price: ")
+        price_after = get_float("Enter price after VAT: ")
+        vat_rate = ((price_after - original) / original) * 100
+        print("VAT rate:", round(vat_rate, 2), "%")
 
 def tax_calculator():
-    print("Tax Calculator:")
+    print("\nTax Calculator:")
     print("1. Calculate tax amount and net income (given income and tax rate)")
     print("2. Calculate tax rate (given original income and after-tax income)")
-    choice = input("Choose an option (1-2): ")
+    
+    while True:
+        choice = input("Choose an option (1-2): ").strip()
+        if choice not in ("1", "2"):
+            print("Invalid choice chosen, try again.")
+            continue
+        break
 
     if choice == "1":
-        while True:
-            try:
-                income = float(input("Enter original income: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
-        while True:
-            try:
-                tax_rate = float(input("Enter tax rate (in %): "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
+        income = get_float("Enter original income: ")
+        tax_rate = get_float("Enter tax rate (in %): ")
+        
         tax_amount = income * tax_rate / 100
-        rta = round(tax_amount, 2)
         net_income = income - tax_amount
-        rni = round(net_income, 2)
-        print("Tax amount:",rta)
-        print("Net income after tax:",rni)
-
-    elif choice == "2":
-        while True:
-            try:
-                original_income = float(input("Enter original income: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-
-        while True:
-            try:
-                after_tax_income = float(input("Enter after-tax income: "))
-                break
-            except ValueError:
-                print("You must enter a number.")
-                
-        tax_rate = ((original_income - after_tax_income) / original_income) * 100
-        rtr = round(tax_rate, 2)
-        print("Tax rate:",rtr,"%")
+        
+        print("Tax amount:", round(tax_amount, 2))
+        print("Net income after tax:", round(net_income, 2))
 
     else:
-        print("Invalid choice")
+        original_income = get_float("Enter original income: ")
+        after_tax_income = get_float("Enter after-tax income: ")
+        
+        tax_rate = ((original_income - after_tax_income) / original_income) * 100
+        print("Tax rate:", round(tax_rate, 2), "%")
 
 def times_table():
-    print("Times Table Calculator:")
+    print("\nTimes Table Calculator:")
     while True:
         try:
             num = int(input("Enter a number: "))
