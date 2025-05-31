@@ -5,10 +5,6 @@ print("Welcome to the Caesar Cipher Encryptor/Decryptor!")
 def menu():
   while True:
     mode = input("\nDo you want to decrypt or encrypt a message? ").strip().lower()
-
-    if mode in ("exit", "quit", "stop"):
-        print("Script ended.")
-        return
       
     if mode not in ("decrypt", "encrypt"):
         print(f"{mode} is not a valid mode. Please try again.")
@@ -29,6 +25,11 @@ def menu():
 
   final = run_cipher(message, key, mode)
   print(f"\nThe {mode}ed message is: {final}.")
+
+  keep_going = input("Do you want to decrypt/encrypt another message? ")
+  if keep_going.strip().lower() in ("no", "n"):
+      print("Script ended.")
+      return
 
 def run_cipher(message, key, mode):
     result = []
