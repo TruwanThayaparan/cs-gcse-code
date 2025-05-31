@@ -1,8 +1,25 @@
 # Challenge 37 - Fizz Buzz (EXTENSION)
 
-num = int(input("What will you count to? "))
-base1 = int(input("Base number 1: "))
-base2 = int(input("Base number 2: "))
+while True:
+    try:
+        num = int(input("What will you count to? "))
+        break
+    except ValueError:
+        print("You must enter a number.")
+
+while True:
+    try:
+        base1 = int(input("Base number 1: "))
+        break
+    except ValueError:
+        print("You must enter a number.")
+
+while True:
+    try:
+        base2 = int(input("Base number 2: "))
+        break
+    except ValueError:
+        print("You must enter a number.")
 
 for i in range(1, num + 1):
     if i % base1 == 0 and i % base2 == 0:
