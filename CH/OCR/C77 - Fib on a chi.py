@@ -11,7 +11,7 @@ while True:
     previous_number = current_number
     current_number = next_number
     seq += 1
-    if len(str(current_number)) == 3:
+    if len(str(current_number)) == 1000:
       print("The index and number of the first term in the Fibonacci sequence that contains 1,000 digits:")
       print(seq, current_number)
       break
