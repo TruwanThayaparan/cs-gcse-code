@@ -1,5 +1,11 @@
 # Challenge 23 - Fibbing
-lets_generate = int(input("How many places of the Fibonacci sequence do you require? "))
+
+while True:
+    try:
+        lets_generate = int(input("How many places of the Fibonacci sequence do you require? "))
+        break
+    except ValueError:
+        print("Please enter a number.")
 
 fib_sequence = []
 previous_number = 0
@@ -20,6 +26,6 @@ for num in range(len(fib_sequence)):
     
 print(total)
 
-print("Reverse Sequence:")
+print("Reversed Sequence:")
 for num in reversed(fib_sequence):
     print(num)
