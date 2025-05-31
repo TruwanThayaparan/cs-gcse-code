@@ -12,27 +12,27 @@ for i in range(10):
             print("Please enter a number.")
 
 print(numbers)
-while True:
-    way = input("Should the numbers be sorted into an ascending order or a descending order? ")
-    if way == "ascending" or way == "descending":
-        break
-    else:
-        print("Not a valid option. Try again.")
 
 # Bubble sort (it's a short list)
-Passes = 0
-Swaps = 0
+passes = 0
+swaps = 0
 needsSorting = True
 
 while needsSorting:
     needsSorting = False
     for i in range(len(numbers) - 1):
-        if (way == "ascending" and numbers[i] > numbers[i + 1]) or \
-           (way == "descending" and numbers[i] < numbers[i + 1]):
+        if numbers[i] > numbers[i + 1]:
             numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
-            Swaps += 1
+            swaps += 1
             needsSorting = True
-    Passes += 1
+    passes += 1
 
-print(f"Sorted List: {numbers}")
-print(f"Total Passes: {Passes}, Total Swaps: {Swaps}")
+def move_evens_after_odds(sorted_list):
+    odds = [x for x in sorted_list if x % 2 != 0]
+    evens = [x for x in sorted_list if x % 2 == 0]
+    return odds + evens
+
+result = move_evens_after_odds(numbers)
+
+print(f"Sorted List: {result}")
+print(f"Total Passes: {passes}, Total Swaps: {swaps}")
