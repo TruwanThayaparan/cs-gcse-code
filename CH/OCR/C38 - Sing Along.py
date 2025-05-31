@@ -7,7 +7,12 @@ def bottle_text(n): # function here makes the code look nicer
     else:
         return f"{n} green bottles"
 
-start = int(input("Where should we start singing '10 Green Bottles' from? "))
+while True:
+    try:
+        start = int(input("Where should we start singing '10 Green Bottles' from? "))
+        break
+    except ValueError:
+        print("You need to enter a number!")
 
 for i in range(start, 0, -1):
     print(f"{bottle_text(i)} hanging on the wall,")
