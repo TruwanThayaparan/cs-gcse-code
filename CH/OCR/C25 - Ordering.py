@@ -22,40 +22,36 @@ while True:
 # Bubble sort (it's a short list)
 Passes = 0
 Swaps = 0
-hasSorted = True
-while hasSorted:
-    hasSorted = False
+needsSorting = True
+
+while needsSorting:
+    needsSorting = False
     for i in range(len(numbers) - 1):
-        if way == "ascending":
-            check = numbers[i] > numbers[i + 1]
-        else:
-            check = numbers[i] < numbers[i + 1]
-            
-        if check:
-                temp = numbers[i]
-                temp2 = numbers[i+1]
-                numbers[i] = numbers[i + 1]
-                numbers[i + 1] = temp
-                Swaps += 1
-                hasSorted = True
-        else:
-            continue
+        if (way == "ascending" and numbers[i] > numbers[i + 1]) or \
+           (way == "descending" and numbers[i] < numbers[i + 1]):
+            numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
+            Swaps += 1
+            needsSorting = True
     Passes += 1
 
-print(numbers)
+print(f"Sorted List: {numbers}")
+print(f"Total Passes: {Passes}, Total Swaps: {Swaps}")
 
-# Extension (this is solving extension 2)
-word = input("Input a word: ")
-parts = word.split()
-print(parts)
-neon = ""
-for part in range(len(parts)):
-    wordle = sorted(parts[part])
-    print(wordle)
-    final = ""
-    for i in wordle:
-        final += i
-    final += " "
-    #print(final)
-    neon += final
-print(neon)
+
+# Extension
+sentence = input("Input a sentence: ")
+
+option = input("Type 1 to sort all letters, or 2 to sort each word individually: ")
+
+if option == "1":
+    letters_only = sentence.replace(" ", "")
+    sorted_letters = ''.join(sorted(letters_only))
+    print(sorted_letters)
+
+elif option == "2":
+    words = sentence.split()
+    sorted_sentence = ' '.join(''.join(sorted(word)) for word in words)
+    print(sorted_sentence)
+
+else:
+    print("Invalid option.")
