@@ -18,7 +18,6 @@ for dish in dishes:
 
     new_words = []
     for i, word in enumerate(words):
-        # Add the word
         new_words.append(word)
         if i < len(words) - 1 and random.choice([True, False]):
             new_words.append("Spam")
