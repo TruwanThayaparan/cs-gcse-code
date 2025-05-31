@@ -9,7 +9,6 @@ To see my solutions for the OCR **A-Level (and GCSE)** Coding Challenges, click 
 - I may not complete every challenge, but I'll work through as many as I can.
 - Some challenges may not include the extension tasks.
 - If you'd like a solution to a challenge I haven't covered yet, feel free to ask ChatGPT for help.
-- Most of the tasks I haven’t covered yet are more suited for A-Level students (since I’m currently doing my GCSEs).
 
 ## Credits
 
