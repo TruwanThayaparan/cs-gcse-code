@@ -20,8 +20,8 @@ while True:
         print("Not a valid option. Try again.")
 
 # Bubble sort (it's a short list)
-Passes = 0
-Swaps = 0
+passes = 0
+swaps = 0
 needsSorting = True
 
 while needsSorting:
@@ -30,12 +30,12 @@ while needsSorting:
         if (way == "ascending" and numbers[i] > numbers[i + 1]) or \
            (way == "descending" and numbers[i] < numbers[i + 1]):
             numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
-            Swaps += 1
+            swaps += 1
             needsSorting = True
-    Passes += 1
+    passes += 1
 
 print(f"Sorted List: {numbers}")
-print(f"Total Passes: {Passes}, Total Swaps: {Swaps}")
+print(f"Total Passes: {passes}, Total Swaps: {swaps}")
 
 
 # Extension
