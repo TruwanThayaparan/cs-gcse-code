@@ -1,57 +1,57 @@
-Challenges:
-1. Factorial Finder
+Here is the full list of challenges in the OCR coding challenges booklet. The ones I have completed are shown by the tick-marks:
+1. Factorial Finder ✅
 2. Speed Tracker
-3. Thief!
+3. Thief! ✅
 4. Classification
-5. Fruit Machine
-6. Unit Converter (temperature, currency, volume)
-7. Credit Card Validator
-8. Arithmetic test
-9. Happy Numbers
-10. Number Names
+5. Fruit Machine ✅
+6. Unit Converter (temperature, currency, volume) ✅
+7. Credit Card Validator ✅
+8. Arithmetic test ✅
+9. Happy Numbers ✅
+10. Number Names ✅
 11. Regex Query Tool
-12. Quiz Maker
-13. Caesar Cipher
+12. Quiz Maker ✅
+13. Caesar Cipher ✅
 14. Events calendar
-15. Pangrams
-16. Kaprekar
-17. Number Table
-18. Years in a Range
-19. Logic Gate
-20. Palindromes
+15. Pangrams ✅
+16. Kaprekar ✅
+17. Number Table ✅
+18. Years in a Range ✅
+19. Logic Gate ✅
+20. Palindromes ✅
 21. Data Entry
-22. Simple Life Calculator
-23. Fibbing
-24. Hack-proof
-25. Ordering
+22. Simple Life Calculator ✅
+23. Fibbing ✅
+24. Hack-proof ✅
+25. Ordering ✅
 26. Truth or not!
-27. Word Subtraction
+27. Word Subtraction ✅
 28. Name that Number
-29. Item Merge
-30. Year Addition
-31. Forwards and Backwards
-32. Code it up
-33. Mor-se Coding
+29. Item Merge ✅
+30. Year Addition ✅
+31. Forwards and Backwards ✅
+32. Code it up ✅
+33. Mor-se Coding ✅
 34. What’s the day?
-35. Game of Chance
+35. Game of Chance ✅
 36. Triangulate
-37. Fizz Buzz
-38. Sing Along
-39. Even more Odd
+37. Fizz Buzz ✅
+38. Sing Along ✅
+39. Even more Odd ✅
 40. Base of Numbers
 41. Prime Factorisation
-42. Tilers mate
+42. Tilers mate ✅
 43. The meaning of life
 44. Sudoku
-45. Find the factorial
+45. Find the factorial ✅
 46. Complex Numbers
-47. Happy Numbers =)
-48. Reverse it
+47. Happy Numbers =) ✅
+48. Reverse it ✅
 49. Fireworks
 50. Mandelbrot Set
-51. Text-speak converter
-52. Is this card valid?
-53. Mortgage Calculator
+51. Text-speak converter ✅
+52. Is this card valid? ✅
+53. Mortgage Calculator ✅
 54. Dear Diary
 55. Secret Ciphers
 56. Page Scraper
@@ -59,11 +59,11 @@ Challenges:
 58. Text based game
 59. CSV File Utility
 60. Get GIFy with it
-61. Your name is…
-62. R\@nd0m P\@ssw0rd generator
+61. Your name is… ✅
+62. R\@nd0m P\@ssw0rd generator ✅
 63. I like Pi
 64. Galaxy song
-65. Spam filter
+65. Spam filter ✅
 66. Silly walks
 67. What have the Romans ever done for us?
 68. Semaphore
@@ -74,8 +74,8 @@ Challenges:
 73. Travel club
 74. Checkmate checker
 75. String permutation
-76. That’s a lot of number
-77. Fib on a chi
+76. That’s a lot of number ✅
+77. Fib on a chi ✅
 78. 2 fiddy
 79. Printer problems
 80. Happy Hopper
