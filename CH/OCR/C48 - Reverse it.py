@@ -22,20 +22,19 @@ vx = 0
 for v in vowels:
     vx += red.lower().count(v)
     
-print("Length:",len(red))
-print("Vowels:",vx)
-print("Consonants:", len(red) - vx)
+print(f"Length: {len(red)}")
+print(f"Vowels: {vx}")
+print(f"Consonants: {len(red) - vx}")
 
 pal = lets_generate
-palidrome = True
-for i in range(len(pal) - 1):
-  if pal[i] == pal[len(pal) - 1 - i]:
-    continue
-  else:
-    palidrome = False
-    break
-    
-if palidrome:
-    print(pal, "is a palindrome.")
+
+palindrome = True
+for i in range(len(pal) // 2): # Only check half the string
+    if pal[i] != pal[len(pal) - 1 - i]:
+        palindrome = False
+        break
+
+if palindrome:
+    print(f"{pal} is a palindrome.")
 else:
-    print(pal, "is not a palindrome.")
+    print(f"{pal} is not a palindrome.")
