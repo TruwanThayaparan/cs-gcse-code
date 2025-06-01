@@ -68,7 +68,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 67. What have the Romans ever done for us?
 68. Semaphore
 69. Beautiful soup
-70. Of mice and men
+70. Of mice and men ✅
 71. Goldbach
 72. Lists
 73. Travel club
