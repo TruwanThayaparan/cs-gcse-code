@@ -39,7 +39,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 38. Sing Along ✅
 39. Even more Odd ✅
 40. Base of Numbers
-41. Prime Factorisation
+41. Prime Factorisation ✅
 42. Tilers mate ✅
 43. The meaning of life
 44. Sudoku
