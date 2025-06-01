@@ -69,7 +69,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 68. Semaphore
 69. Beautiful soup
 70. Of mice and men ✅
-71. Goldbach
+71. Goldbach ✅
 72. Lists
 73. Travel club
 74. Checkmate checker
