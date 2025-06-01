@@ -1,7 +1,13 @@
 # Challenge 3 - Thief!
 
 pin = "4214" # set this to any 4-digit number
-dan = input("Input the four digits in question: ")
+while True:
+    dan = input("Input the four digits in question (XXXX): ").strip()
+    if len(dan) != 4 or not dan.isdigit():
+        print("You must enter exactly 4 digits.")
+        continue
+    break
+    
 numbers = [dan[0], dan[1], dan[2], dan[3]]
 saved = []
 print(numbers)
