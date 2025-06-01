@@ -9,7 +9,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 8. Arithmetic test ✅
 9. Happy Numbers ✅
 10. Number Names ✅
-11. Regex Query Tool
+11. Regex Query Tool ✅
 12. Quiz Maker ✅
 13. Caesar Cipher ✅
 14. Events calendar
