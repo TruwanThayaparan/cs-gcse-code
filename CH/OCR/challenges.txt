@@ -56,7 +56,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 55. Secret Ciphers
 56. Page Scraper
 57. Such meme, many like
-58. Text based game
+58. Text based game ✅
 59. CSV File Utility
 60. Get GIFy with it
 61. Your name is… ✅
