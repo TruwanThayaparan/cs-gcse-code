@@ -1,6 +1,6 @@
 Here is the full list of challenges in the OCR coding challenges booklet. The ones I have completed are shown by the tick-marks:
 1. Factorial Finder ✅
-2. Speed Tracker
+2. Speed Tracker ✅
 3. Thief! ✅
 4. Classification ✅
 5. Fruit Machine ✅
