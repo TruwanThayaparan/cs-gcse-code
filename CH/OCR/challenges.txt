@@ -53,7 +53,7 @@ Here is the full list of challenges in the OCR coding challenges booklet. The on
 52. Is this card valid? ✅
 53. Mortgage Calculator ✅
 54. Dear Diary
-55. Secret Ciphers
+55. Secret Ciphers ✅
 56. Page Scraper
 57. Such meme, many like
 58. Text based game ✅
