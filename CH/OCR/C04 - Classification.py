@@ -45,7 +45,7 @@ def menu():
     else:
       print("\nSorry, the programming language you attempted to classify is one I do not know.")
 
-    keep_going = input("Do you want to classify another programming language? (yes/no): ")
+    keep_going = input("Do you want to classify another programming language? (yes/no): ").strip().lower()
     if keep_going in ("no", "n"):
       print("Goodbye!")
       break
