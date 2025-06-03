@@ -80,7 +80,7 @@ items = [
     ("C77", "Fib on a chi", "✅"),
     ("C78", "2 fiddy", "❌"),
     ("C79", "Printer problems", "❌"),
-    ("C80", "Happy Hopper", "❌"),
+    ("C80", "Happy Hopper", "✅"),
 ]
 
 max_title_len = max(len(f"{code} - {title}") for code, title, status in items)
