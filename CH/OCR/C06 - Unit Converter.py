@@ -109,7 +109,7 @@ while True:
   if converted == "fail":
     print("An issue occurred whilst converting.")
   else:
-    print(f"{v} {cf.upper()} converted to {ct.upper()} is {round(converted, 4)} {ct.upper()}.")
+    print(f"{v} {cf.capitalize()} converted to {ct.capitalize()} is {round(converted, 4)} {ct.capitalize()}.")
 
   keep_going = input("Want to convert again? (yes/no): ").strip().lower()
   if keep_going == "no": 
