@@ -1,4 +1,4 @@
-# Challlenge 3 - Fruit Machine
+# Challlenge 5 - Fruit Machine
 import random
 
 symbols = ["Cherry", "Bell", "Lemon", "Orange", "Star", "Skull"]
