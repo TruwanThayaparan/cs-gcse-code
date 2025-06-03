@@ -67,7 +67,7 @@ items = [
     ("C64", "Galaxy song", "❌"),
     ("C65", "Spam filter", "✅"),
     ("C66", "Silly walks", "❌"),
-    ("C67", "What have the Romans ever done for us?", "❌"),
+    ("C67", "What have the Romans ever done for us?", "✅"),
     ("C68", "Semaphore", "❌"),
     ("C69", "Beautiful soup", "❌"),
     ("C70", "Of mice and men", "✅"),
