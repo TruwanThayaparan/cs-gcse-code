@@ -21,7 +21,7 @@ items = [
     ("C18", "Years in a Range", "✅"),
     ("C19", "Logic Gate", "✅"),
     ("C20", "Palindromes", "✅"),
-    ("C21", "Data Entry", "❌"),
+    ("C21", "Data Entry", "✅"),
     ("C22", "Simple Life Calculator", "✅"),
     ("C23", "Fibbing", "✅"),
     ("C24", "Hack-proof", "✅"),
