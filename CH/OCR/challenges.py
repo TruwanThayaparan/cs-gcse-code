@@ -75,12 +75,12 @@ items = [
     ("C71", "Goldbach", "✅"),
     ("C72", "Lists", "✅"),
     ("C73", "Travel club", "❌"),
-    ("C74", "Checkmate checker", "❌"),
+    ("C74", "Checkmate checker", "❌"), #
     ("C75", "String permutation", "✅"),
     ("C76", "That's a lot of number", "✅"),
     ("C77", "Fib on a chi", "✅"),
     ("C78", "2 fiddy", "❌"),
-    ("C79", "Printer problems", "❌"),
+    ("C79", "Printer problems", "❌"), #
     ("C80", "Happy Hopper", "✅"),
 ]
 
