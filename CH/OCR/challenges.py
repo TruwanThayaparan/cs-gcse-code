@@ -34,7 +34,7 @@ items = [
     ("C31", "Forwards and Backwards", "✅"),
     ("C32", "Code it up", "✅"),
     ("C33", "Mor-se Coding", "✅"),
-    ("C34", "What's the day?", "❌"),
+    ("C34", "What's the day?", "✅"),
     ("C35", "Game of Chance", "✅"),
     ("C36", "Triangulate", "❌"),
     ("C37", "Fizz Buzz", "✅"),
