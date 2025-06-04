@@ -37,7 +37,7 @@ items = [
     ("C33", "Mor-se Coding", "✅"),
     ("C34", "What's the day?", "✅"),
     ("C35", "Game of Chance", "✅"),
-    ("C36", "Triangulate", "❌"),
+    ("C36", "Triangulate", "✅"),
     ("C37", "Fizz Buzz", "✅"),
     ("C38", "Sing Along", "✅"),
     ("C39", "Even more Odd", "✅"),
