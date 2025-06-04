@@ -43,33 +43,33 @@ items = [
     ("C40", "Base of Numbers", "✅"),
     ("C41", "Prime Factorisation", "✅"),
     ("C42", "Tilers mate", "✅"),
-    ("C43", "The meaning of life", "❌"),
-    ("C44", "Sudoku", "❌"),
+    ("C43", "The meaning of life", "❌"), #
+    ("C44", "Sudoku", "❌"), #
     ("C45", "Find the factorial", "✅"),
     ("C46", "Complex Numbers", "❌"),
     ("C47", "Happy Numbers =)", "✅"),
     ("C48", "Reverse it", "✅"),
-    ("C49", "Fireworks", "❌"),
-    ("C50", "Mandelbrot Set", "❌"),
+    ("C49", "Fireworks", "❌"), #
+    ("C50", "Mandelbrot Set", "❌"), #
     ("C51", "Text-speak converter", "✅"),
     ("C52", "Is this card valid?", "✅"),
     ("C53", "Mortgage Calculator", "✅"),
     ("C54", "Dear Diary", "❌"),
     ("C55", "Secret Ciphers", "✅"),
-    ("C56", "Page Scraper", "❌"),
-    ("C57", "Such meme, many like", "❌"),
+    ("C56", "Page Scraper", "❌"), #
+    ("C57", "Such meme, many like", "❌"), #
     ("C58", "Text based game", "✅"),
-    ("C59", "CSV File Utility", "❌"),
-    ("C60", "Get GIFy with it", "❌"),
+    ("C59", "CSV File Utility", "❌"), #
+    ("C60", "Get GIFy with it", "❌"), #
     ("C61", "Your name is…", "✅"),
     ("C62", "R@nd0m P@ssw0rd generator", "✅"),
     ("C63", "I like Pi", "✅"),
-    ("C64", "Galaxy song", "❌"),
+    ("C64", "Galaxy song", "❌"), #
     ("C65", "Spam filter", "✅"),
-    ("C66", "Silly walks", "❌"),
+    ("C66", "Silly walks", "❌"), #
     ("C67", "What have the Romans ever done for us?", "✅"),
-    ("C68", "Semaphore", "❌"),
-    ("C69", "Beautiful soup", "❌"),
+    ("C68", "Semaphore", "❌"), #
+    ("C69", "Beautiful soup", "❌"), #
     ("C70", "Of mice and men", "✅"),
     ("C71", "Goldbach", "✅"),
     ("C72", "Lists", "✅"),
