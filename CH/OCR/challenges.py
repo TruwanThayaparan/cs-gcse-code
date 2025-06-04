@@ -14,7 +14,7 @@ items = [
     ("C11", "Regex Query Tool", "✅"),
     ("C12", "Quiz Maker", "✅"),
     ("C13", "Caesar Cipher", "✅"),
-    ("C14", "Events calendar", "❌"),
+    ("C14", "Events calendar", "✅"),
     ("C15", "Pangrams", "✅"),
     ("C16", "Kaprekar", "✅"),
     ("C17", "Number Table", "✅"),
