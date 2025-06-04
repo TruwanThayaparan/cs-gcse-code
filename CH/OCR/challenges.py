@@ -1,4 +1,5 @@
-# Here is the full list of challenges in the OCR coding challenges booklet. The tick-marks show the ones I have completed:
+# Here is the full list of challenges in the OCR coding challenges booklet. The tick marks show the ones I have completed.
+# Ones with a hashtag are ones I am unlikely to complete (for now).
 
 items = [
     ("C01", "Factorial Finder", "✅"),
@@ -54,7 +55,7 @@ items = [
     ("C51", "Text-speak converter", "✅"),
     ("C52", "Is this card valid?", "✅"),
     ("C53", "Mortgage Calculator", "✅"),
-    ("C54", "Dear Diary", "❌"),
+    ("C54", "Dear Diary", "✅"),
     ("C55", "Secret Ciphers", "✅"),
     ("C56", "Page Scraper", "❌"), #
     ("C57", "Such meme, many like", "❌"), #
