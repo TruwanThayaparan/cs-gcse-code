@@ -25,3 +25,32 @@ else:
 		print("You lost!")
 	else:
 		print("You won!")
+
+while True:
+    try:
+        total_bill = float(input("Enter the total amount of the bill: "))
+        break
+    except ValueError:
+        print("You must enter a number!")
+
+payment_left = total_bill
+
+
+while payment_left > 0:
+    while True:
+        try:
+            person_is_paying = float(input("How much will you pay: "))
+            break
+        except ValueError:
+            print("You must enter a number!")
+    
+    payment_left = round(payment_left - person_is_paying, 2)
+    
+    if payment_left > 0:
+        print(f"Payment left: £{payment_left}")
+    elif payment_left == 0:
+        print("Bill paid")
+        break
+    else:  
+        print(f"Tip is: £{abs(payment_left)}")
+        break  
