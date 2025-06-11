@@ -11,3 +11,21 @@ for i in range(99):
 			gameWon = True
 	else:
 		Rep = 1
+
+ticket = [["","",""],
+["","",""],
+["","",""]]
+
+def checkWinner(ticket):
+    x = 0
+    for i in range(3):
+        for j in range(3):
+            if ticket[i][j] == "*":
+                x += 1
+            
+    if x == 9:
+        print("Bingo")
+    else:
+        print(x)
+            
+checkWinner(ticket)
