@@ -1,2 +1,2 @@
 # CGP
-CGP Python Programming Challenges (CGPBOOKS.CO.UK/SHED)
+CGP Python Programming Challenges: https://cgpbooks.co.uk/shed
