@@ -3,12 +3,12 @@ dictionary = {
     "lol": "laugh out loud",
     "ts": "this crap",
     "pmo": "pees me off",
-    "sybau": "shut your big axe up",
+    "sybau": "stay young beautiful and unique",
     "ngl": "not gonna lie",
     "icl": "i can't lie",
     "lmao": "laughing my ahh off",
     "imo": "in my opinion",
-    "kys": "keep yourself safe",
+    "idc": "I don't care",
     "lmfao": "laughing my fricking ahh off",
     "fr": "for real",
     "wdym": "what do you mean",
@@ -26,8 +26,6 @@ dictionary = {
     "rn": "right now",
     "omg": "oh my god",
     "rofl": "rolling on the floor laughing",
-    "wth": "what the hell",
-    "wtf": "what the frick",
     "pls": "please"
 }
 
