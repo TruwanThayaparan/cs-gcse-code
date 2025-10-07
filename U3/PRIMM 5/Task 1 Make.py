@@ -11,9 +11,9 @@ while True:
             if 0 <= guess <= 10:
               break
             else:
-              print("NUMBER MUST BE BETWEEN 0 AND 10.")
+              print("Number must be between 0 and 10.")
           except ValueError:
-            print("ENTER A NUMBER.")
+            print("You must enter a number.")
 
         if guess == random_number:
           print("You guessed my number!")
@@ -21,14 +21,14 @@ while True:
         elif guess > random_number:
           print("Lower...")
           guesses += 1
-          print("Guesses left:", 5 - guesses)
+          print(f"Guesses left: {5 - guesses}")
         else:
           print("Higher...")
           guesses += 1
-          print("Guesses left:", 5 - guesses)
+          print(f"Guesses left: {5 - guesses}")
           
     if guesses == 5:
-        print("Oh no, you lost! My number was:",random_number)
+        print(f"Oh no, you lost! My number was {random_number}")
       
     restart = input("Would you like to play again? ")
     if restart == "yes":
