@@ -35,7 +35,7 @@ def search_member():
         t.header(["First Name", "Last Name", "Centre Name"])
         for member in found:
             t.add_row(member)
-        print("\n🔍 Search Results:")
+        print("\nSearch Results:")
         print(t.draw())
     else:
         print(f"No members found with last name '{search_last}'.")
@@ -59,7 +59,7 @@ def menu():
                         members.append(new_member)
                     print("\nMembers registered successfully!")
                 except ValueError:
-                    print("❌ You must enter a number.")
+                    print("You must enter a number.")
             elif choice == 2:
                 search_member()
             elif choice == 3:
@@ -72,5 +72,4 @@ def menu():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-if __name__ == "__main__":
-    menu()
+menu()
