@@ -26,7 +26,7 @@ def room_forest(name):
         room_cave(name)
     elif choice == "tree":
         print(f"\n{name}, you climb the tree and find a hidden treehouse filled with treasure.")
-        print("You win! 🏆")
+        print("You win!")
     else:
         print("That's not a valid choice. You must enter 'cave' or 'tree'.")
         room_forest(name)
