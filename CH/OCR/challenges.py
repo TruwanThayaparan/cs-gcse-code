@@ -27,9 +27,9 @@ items = [
     ("C23", "Fibbing", "✅"),
     ("C24", "Hack-proof", "✅"),
     ("C25", "Ordering", "✅"),
-    ("C26", "Truth or not!", "❌"),
+    ("C26", "Truth or not!", "❌"), #
     ("C27", "Word Subtraction", "✅"),
-    ("C28", "Name that Number", "❌"),
+    ("C28", "Name that Number", "❌"), #
     ("C29", "Item Merge", "✅"),
     ("C30", "Year Addition", "✅"),
     ("C31", "Forwards and Backwards", "✅"),
@@ -47,7 +47,7 @@ items = [
     ("C43", "The meaning of life", "❌"), #
     ("C44", "Sudoku", "❌"), #
     ("C45", "Find the factorial", "✅"),
-    ("C46", "Complex Numbers", "❌"),
+    ("C46", "Complex Numbers", "✅"),
     ("C47", "Happy Numbers =)", "✅"),
     ("C48", "Reverse it", "✅"),
     ("C49", "Fireworks", "❌"), #
@@ -74,7 +74,7 @@ items = [
     ("C70", "Of mice and men", "✅"),
     ("C71", "Goldbach", "✅"),
     ("C72", "Lists", "✅"),
-    ("C73", "Travel club", "❌"),
+    ("C73", "Travel club", "❌"), #
     ("C74", "Checkmate checker", "❌"), #
     ("C75", "String permutation", "✅"),
     ("C76", "That's a lot of number", "✅"),
