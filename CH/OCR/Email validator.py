@@ -1,4 +1,4 @@
-# Challenge 3 - Email Validator (Stricter Version)
+# Challenge 3 - Email Validator
 
 def check_email(email):
     email = email.strip()
