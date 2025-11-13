@@ -42,7 +42,7 @@ def hangman():
             print("\nCongratulations! You guessed the word:", word)
         else:
             print("\nGame over! You ran out of chances.")
-            print("The word was:", word)
+            print(f"The word was: {word}")
 
         replay = input("Do you want to play again? (yes/no): ").strip().lower()
         if replay in ('no', 'n'):
