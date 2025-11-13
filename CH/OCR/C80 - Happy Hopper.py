@@ -38,5 +38,4 @@ def main():
             except ValueError:
                 print("Invalid input. Please enter an integer, 'NEW SEQUENCE', or 'QUIT'.")
 
-if __name__ == "__main__":
-    main()
+main()
