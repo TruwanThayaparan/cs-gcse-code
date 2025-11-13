@@ -12,3 +12,5 @@ if palindrome:
     print(f"{pal} is a palindrome.")
 else:
     print(f"{pal} is not a palindrome.")
+
+# pal[::-1] - even simpler
