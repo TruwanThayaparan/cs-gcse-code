@@ -26,6 +26,8 @@ area_of_garden = length * width
 turf_required = area_of_garden - (math.pi * rad**2)
 print(f"Turf needed: {round(turf_required, 2)} metres squared.")
 
+
+
 # Challenge 29
 while True:
   try:
@@ -46,6 +48,8 @@ wages_hw = hours_worked * 5
 
 print(f"Wages earned: {max(wages_hw, wages_bm)}")
 # wages_hw if wages_hw > wages_bm else wages_bm
+
+
 
 # Challenge 30
 def is_triangle(a, b, c):
@@ -72,6 +76,8 @@ def check():
     print("Isosceles" if t_type else "Not Isosceles")
 
 check()
+
+
 
 # Challenge 31
 while True:
