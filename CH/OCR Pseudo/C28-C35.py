@@ -186,3 +186,61 @@ elif 35 <= total_points <= 39:
   print("A discussion is needed")
 else:
   print("Sorry, not enough points")
+
+
+
+# Challenge 34
+days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+electric_usage = {}
+
+for day in days_of_week:
+    while True:
+        try:
+            units = float(input(f"Enter units of electricity used on {day}: "))
+            if units < 0:
+                print("Units must be a positive number.")
+            else:
+                break
+        except ValueError:
+            print("You must enter a valid number.")
+    
+    electric_usage[day] = units
+
+free_day = min(electric_usage, key=electric_usage.get)
+
+print(f"\nThe day with the least usage, and therefore free, is {free_day} ({electric_usage[free_day]} units).")
+
+
+
+# Challenge 35
+while True:
+    try:
+        cars_available = int(input("How many cars are available? "))
+        if cars_available < 0:
+            print("Number of cars cannot be negative.")
+        else:
+            break
+    except ValueError:
+        print("You must enter a valid number.")
+
+seats_available = cars_available * 5
+
+while True:
+    try:
+        people_going = int(input("How many people are going? "))
+        if people_going < 0:
+            print("Number of people cannot be negative.")
+        else:
+            break
+    except ValueError:
+        print("You must enter a valid number.")
+
+possible = seats_available - people_going
+
+if possible >= 0:
+    print("We have enough seats.")
+else:
+    extra_people = abs(possible)
+    extra_cars = (extra_people + 4) // 5 
+    print(f"Another {extra_cars} car(s) are needed.")
