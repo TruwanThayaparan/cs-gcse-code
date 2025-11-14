@@ -1,3 +1,4 @@
+# Difficulty 6
 # Challenge 28
 import math
 
@@ -91,9 +92,8 @@ while True:
     print("You must enter a whole number.")
 
 weights_total = 0
-count = 0
 
-while count < times:
+for i in range(1, times + 1):
   while True:
     try:
       weight = int(input("Enter a weight: "))
@@ -105,7 +105,84 @@ while count < times:
       print("You must enter a whole number.")
     
   weights_total += weight
-  count += 1
 
-mean = weights_total / count
+mean = weights_total / times
 print(f"Average weight: {mean:.2f} g")
+
+
+
+# Challenge 32
+while True:
+    try:
+        money = float(input("Enter the amount of money you want to save: "))
+        if money < 0:
+            print("You must enter a positive amount.")
+        break
+    except ValueError:
+        print("You must enter a valid number.")
+
+while True:
+    try:
+        num_accounts = int(input("Enter the number of bank accounts to compare: "))
+        if num_accounts <= 0:
+            print("Number of accounts must be at least 1.")
+        break
+    except ValueError:
+        print("You must enter a valid integer.")
+
+totals = []
+
+for i in range(1, num_accounts + 1):
+    while True:
+        try:
+            interest_rate = float(input(f"Enter the interest rate for account {i} (in %): "))
+            if interest_rate < 0:
+                print("Interest rate must not be negative.")
+            break
+        except ValueError:
+            print("You must enter a valid number.")
+
+    interest = (money / 100) * interest_rate
+    total = money + interest
+    totals.append(total)
+
+    print(f"Total amount for account {i}: {total:.2f}")
+
+max_total = max(totals)
+best_account = totals.index(max_total) + 1
+print(f"\nThe best account is account {best_account} with a total of {max_total:.2f}.")
+
+
+
+# Challenge 33
+while True:
+    try:
+        gcses_done = int(input("How many GCSEs did you do? "))
+        if gcses_done <= 0:
+            print("You must enter at least 1 GCSE.")
+        else:
+            break
+    except ValueError:
+        print("You must enter a valid number.")
+
+total_points = 0
+    
+for i in range(1, gcses_done + 1):
+  while True:
+    try:
+      result = int(input(f"Enter result for GCSE {i} (1-9): "))
+      if result < 1 or result > 9:
+        print("Grade must be between 1 and 9.")
+      else:
+        break
+    except ValueError:
+      print("You must enter a whole number.")
+    
+  total_points += result
+
+if total_points > 40:
+  print("You can go to the sixth form")
+elif 35 <= total_points <= 39:
+  print("A discussion is needed")
+else:
+  print("Sorry, not enough points")
