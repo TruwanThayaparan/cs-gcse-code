@@ -63,7 +63,8 @@ print("You're correct!" if guess == 26 else "You're wrong...")
 # C11
 number1 = int(input("Enter a number: "))
 number2 = int(input("Enter another number: "))
-print("The bigger number is:", number1 if number1 > number2 else number2)
+print(f"The bigger number is: {max(number1, number2)}")
+# print(f"The bigger number is: {number1 if number1 > number2 else number2}")
 
 # C12
 random_number = random.randint(1, 10)
